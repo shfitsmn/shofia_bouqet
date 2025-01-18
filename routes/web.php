@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LandingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.landing.index');
-});
+Route::get('/', [LandingController::class, 'index']);
+
+Route::get('/login', [LandingController::class, 'login']);
+Route::post('/login', [LandingController::class, 'loginStore']);
+Route::get('/register', [LandingController::class,'register']);
+Route::post('/register', [LandingController::class, 'registerStore']);
+
+Route::get('/logout', [LandingController::class, 'logout']);
 
 Route::get('/dashboard', function () {
     return 'Dashboard';
