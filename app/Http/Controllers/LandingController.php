@@ -10,19 +10,23 @@ use Illuminate\Support\Facades\Hash;
 
 class LandingController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view('landing.index');
     }
 
-    public function login(){
+    public function login()
+    {
         return view('landing.login');
     }
 
-    public function register(){
+    public function register()
+    {
         return view('landing.register');
     }
 
-    public function registerStore(Request $request){
+    public function registerStore(Request $request)
+    {
         $validatedData = $request->validate([
             'nama' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
@@ -41,7 +45,8 @@ class LandingController extends Controller
         return redirect('/dashboard')->with('success', 'Registrasi berhasil! Selamat datang di Shofia Bouquet.');
     }
 
-    public function loginStore(Request $request){
+    public function loginStore(Request $request)
+    {
         $validatedData = $request->validate([
             'email' => 'required|string|email',
             'password' => 'required|string',
@@ -56,5 +61,13 @@ class LandingController extends Controller
         return back()->withErrors([
             'email' => 'Email atau kata sandi salah.',
         ])->onlyInput('email');
+    }
+
+    // logout
+    public function logout()
+    {
+        Auth::logout();
+
+        return redirect('/')->with('success', 'Berhasil logout.');
     }
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,13 +17,17 @@ use App\Http\Controllers\LandingController;
 
 Route::get('/', [LandingController::class, 'index']);
 
-Route::get('/login', [LandingController::class, 'login']);
-Route::post('/login', [LandingController::class, 'loginStore']);
-Route::get('/register', [LandingController::class,'register']);
-Route::post('/register', [LandingController::class, 'registerStore']);
+// middleware group guest
+Route::group(['middleware' => 'guest'], function () {
+    Route::get('/login', [LandingController::class, 'login']);
+    Route::post('/login', [LandingController::class, 'loginStore']);
+    Route::get('/register', [LandingController::class, 'register']);
+    Route::post('/register', [LandingController::class, 'registerStore']);
+});
 
-Route::get('/logout', [LandingController::class, 'logout']);
 
-Route::get('/dashboard', function () {
-    return 'Dashboard';
+// route group for authentication
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/logout', [LandingController::class, 'logout']);
+    Route::get('/dashboard', [DashboardController::class, 'index']);
 });
