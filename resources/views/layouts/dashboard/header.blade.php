@@ -28,8 +28,11 @@
                             <span class="text-dark d-flex flex-column align-items-start gap-2 dropdown-item">
                                 <h5 class="text-primary">Welcome!</h5>
                                 <span class="fw-bold">{{ Auth::user()->nama }}</span> <!-- Nama lebih besar -->
-                                <span class="text-muted">{{ Auth::user()->email . " | " . Auth::user()->role === "user"
-                                    ? "Pengguna" : Auth::user()->role === "admin" ?? "Admin" }}</span>
+                                <span class="text-muted">
+                                    {{ Auth::user()->email . ' | ' . (Auth::user()->role === 'user' ? 'Pengguna' :
+                                    (Auth::user()->role === 'admin' ? 'Admin' : 'Unknown')) }}
+                                </span>
+
                                 <!-- Email lebih kecil -->
                             </span>
 
