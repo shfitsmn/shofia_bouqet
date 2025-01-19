@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DashboardController;
 
@@ -30,4 +31,8 @@ Route::group(['middleware' => 'guest'], function () {
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/logout', [LandingController::class, 'logout'])->name('logout');
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    Route::get("/user/all", [DashboardController::class,'userAll']);
+    Route::get("/user/create", [DashboardController::class,'userCreate'])->name('user.create');
+    Route::post('/user/store', [UserController::class, 'store'])->name('user.store');
 });
