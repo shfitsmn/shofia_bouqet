@@ -37,11 +37,11 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+                    <a class="sidebar-link" href="/produk/all" aria-expanded="false">
                         <span>
-                            <i class="ti ti-alert-circle"></i>
+                            <i class="ti ti-cards"></i>
                         </span>
-                        <span class="hide-menu">Alerts</span>
+                        <span class="hide-menu">Manajemen Produk</span>
                     </a>
                 </li>
                 <li class="sidebar-item">

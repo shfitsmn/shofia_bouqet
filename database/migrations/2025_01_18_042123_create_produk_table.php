@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nama');
             $table->text('deskripsi')->nullable();
             $table->decimal('harga', 10, 2);
+            $table->integer('stok');
             $table->string('gambar')->nullable();
             $table->enum('kategori', ['bunga', 'uang', 'snack']);
             $table->timestamps();

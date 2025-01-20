@@ -11,10 +11,4 @@ class DashboardController extends Controller
         return view('dashboard.index');
     }
 
-    public function userCreate(){
-        return view('dashboard.admin.create-produk');
-    }
-    public function userAll(){
-        return view('dashboard.admin.user-all');
-    }
 }
