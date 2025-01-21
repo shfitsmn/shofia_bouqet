@@ -75,7 +75,7 @@ class ProdukController extends Controller
      */
     public function show(string $id)
     {
-        //
+        
     }
 
     /**
@@ -83,15 +83,53 @@ class ProdukController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $produk = Produk::find($id);
+        return view('dashboard.admin.edit-produk', compact('produk'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        //
+        // Validasi input
+        $request->validate([
+            'nama' => 'required|string|max:255',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'stok' => 'required|integer|min:0',
+            'kategori' => 'required|string',
+            'harga' => 'required|numeric|min:0',
+            'deskripsi' => 'nullable|string',
+        ]);
+
+        // Cari data produk berdasarkan ID
+        $produk = Produk::findOrFail($id);
+
+        // Update data produk
+        $produk->nama = $request->nama;
+        $produk->stok = $request->stok;
+        $produk->kategori = $request->kategori;
+        $produk->harga = $request->harga;
+        $produk->deskripsi = $request->deskripsi;
+
+        // Jika ada gambar baru yang diupload
+        if ($request->hasFile('gambar')) {
+            // Hapus gambar lama jika ada
+            if ($produk->gambar && file_exists(storage_path('app/public/' . $produk->gambar))) {
+                unlink(storage_path('app/public/' . $produk->gambar));
+            }
+
+            // Simpan gambar baru
+            $file = $request->file('gambar');
+            $path = $file->store('produk', 'public'); // Simpan di folder 'storage/app/public/produk'
+            $produk->gambar = $path; // Simpan path gambar ke database
+        }
+
+        // Simpan perubahan ke database
+        $produk->save();
+
+        // Redirect dengan pesan sukses
+        return redirect()->route('produk.index')->with('success', 'Produk berhasil diperbarui!');
     }
 
     /**
@@ -99,6 +137,18 @@ class ProdukController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        // Cari data produk berdasarkan ID
+        $produk = Produk::findOrFail($id);
+
+        // Hapus gambar jika ada
+        if ($produk->gambar && file_exists(storage_path('app/public/' . $produk->gambar))) {
+            unlink(storage_path('app/public/' . $produk->gambar));
+        }
+
+        // Hapus data produk
+        $produk->delete();
+
+        // Redirect dengan pesan sukses
+        return redirect()->route('produk.index')->with('success', 'Produk berhasil dihapus!');
     }
 }
