@@ -23,7 +23,7 @@
                         <div class="banner-item image-zoom-effect">
                             <div class="image-holder">
                                 <a href="#">
-                                    <img src="{{ asset('assets-landing/images/bouquet1.jpg') }}" alt="Bouquet 1"
+                                    <img src="{{ asset('assets-landing/images/bouqet1.jpg') }}" alt="Bouquet 1"
                                         class="img-fluid">
                                 </a>
                             </div>
@@ -47,7 +47,7 @@
                         <div class="banner-item image-zoom-effect">
                             <div class="image-holder">
                                 <a href="#">
-                                    <img src="{{ asset('assets-landing/images/bouquet2.jpg') }}" alt="Bouquet 2"
+                                    <img src="{{ asset('assets-landing/images/bouqet2.jpg') }}" alt="Bouquet 2"
                                         class="img-fluid">
                                 </a>
                             </div>
@@ -71,7 +71,7 @@
                         <div class="banner-item image-zoom-effect">
                             <div class="image-holder">
                                 <a href="#">
-                                    <img src="{{ asset('assets-landing/images/bouquet3.jpg') }}" alt="Bouquet 3"
+                                    <img src="{{ asset('assets-landing/images/bouqet3.jpg') }}" alt="Bouquet 3"
                                         class="img-fluid">
                                 </a>
                             </div>
@@ -160,7 +160,7 @@
                     <div class="cat-item image-zoom-effect">
                         <div class="image-holder">
                             <a href="#romantic-bouquets">
-                                <img src="{{ asset('assets-landing/images/romantic-bouquet.jpg') }}"
+                                <img src="{{ asset('assets-landing/images/romantic-bouqet.jpg') }}"
                                     alt="Romantic Bouquets" class="product-image img-fluid">
                             </a>
                         </div>
@@ -176,7 +176,7 @@
                     <div class="cat-item image-zoom-effect">
                         <div class="image-holder">
                             <a href="#birthday-bouquets">
-                                <img src="{{ asset('assets-landing/images/birthday-bouquet.jpg') }}"
+                                <img src="{{ asset('assets-landing/images/birthday-bouqet.jpg') }}"
                                     alt="Birthday Bouquets" class="product-image img-fluid">
                             </a>
                         </div>
@@ -192,7 +192,7 @@
                     <div class="cat-item image-zoom-effect">
                         <div class="image-holder">
                             <a href="#wedding-bouquets">
-                                <img src="{{ asset('assets-landing/images/wedding-bouquet.jpg') }}"
+                                <img src="{{ asset('assets-landing/images/wedding-bouqet.jpg') }}"
                                     alt="Wedding Bouquets" class="product-image img-fluid">
                             </a>
                         </div>
