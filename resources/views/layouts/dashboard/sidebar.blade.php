@@ -45,14 +45,14 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+                    <a class="sidebar-link" href="/pesanan/all" aria-expanded="false">
                         <span>
-                            <i class="ti ti-cards"></i>
+                            <i class="ti ti-truck-delivery"></i>
                         </span>
-                        <span class="hide-menu">Card</span>
+                        <span class="hide-menu">Manajemen Pesanan</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                {{-- <li class="sidebar-item">
                     <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
                         <span>
                             <i class="ti ti-file-description"></i>
@@ -107,7 +107,7 @@
                         </span>
                         <span class="hide-menu">Sample Page</span>
                     </a>
-                </li>
+                </li> --}}
             </ul>
         </nav>
         <!-- End Sidebar navigation -->
