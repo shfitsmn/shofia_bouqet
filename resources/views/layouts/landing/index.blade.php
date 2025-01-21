@@ -292,8 +292,7 @@
                                     </a>
                                 </li>
                                 <li class="d-sm-block d-lg-none">
-                                    <a href="/checkout" class="text-uppercase mx-3" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Checkout
+                                    <a href="/checkout" class="text-uppercase mx-3">Checkout
                                     </a>
                                 </li>
                                 @else
@@ -319,8 +318,7 @@
                             </a>
                         </li>
                         <li class="d-none d-lg-block">
-                            <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Checkout
+                            <a href="/checkout" class="text-uppercase mx-3">Checkout
                             </a>
                         </li>
                         @else

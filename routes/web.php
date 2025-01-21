@@ -55,4 +55,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/pesanan/update/{id}', [PesananController::class, 'update'])->name('pesanan.update');
     Route::get('/pesanan/delete/{id}', [PesananController::class, 'destroy'])->name('pesanan.delete');
     Route::get('/pesanan/detail/{id}', [PesananController::class, 'show'])->name('pesanan.detail');
+
+    Route::post('/pesan/{id}', [PesananController::class, 'storePesanan'])->name('pesanan.simpan'); // Memproses pesanan
+    Route::post('/pesanan/{id}/terima', [PesananController::class, 'terimaPesanan'])->name('pesanan.terima'); // Menerima pesanan
+
+    Route::get('/checkout', [PesananController::class, 'checkoutPesanan'])->name('checkoutPesanan');
 });
