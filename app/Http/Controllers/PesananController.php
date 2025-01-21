@@ -15,7 +15,7 @@ class PesananController extends Controller
      */
     public function index()
     {
-        $pesanans = Pesanan::all();
+        $pesanans = Pesanan::with('pengguna', 'detailPesanan.produk')->get();
         return view('dashboard.admin.pesanan-all', compact('pesanans'));
     }
 
