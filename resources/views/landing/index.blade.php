@@ -681,7 +681,7 @@
         <div class="col-6 col-sm-4 col-md-2">
             <div class="insta-item">
                 <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-                    <img src="{{ asset('assets-landing/images/insta-item1.jpg') }}" alt="instagram"
+                    <img src="{{ asset('assets-landing/images/bouqet7.jpg') }}" alt="instagram"
                         class="insta-image img-fluid">
                 </a>
             </div>
@@ -689,7 +689,7 @@
         <div class="col-6 col-sm-4 col-md-2">
             <div class="insta-item">
                 <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-                    <img src="{{ asset('assets-landing/images/insta-item2.jpg') }}" alt="instagram"
+                    <img src="{{ asset('assets-landing/images/bouqet8.jpg') }}" alt="instagram"
                         class="insta-image img-fluid">
                 </a>
             </div>
@@ -697,7 +697,7 @@
         <div class="col-6 col-sm-4 col-md-2">
             <div class="insta-item">
                 <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-                    <img src="{{ asset('assets-landing/images/insta-item3.jpg') }}" alt="instagram"
+                    <img src="{{ asset('assets-landing/images/bouqet9.jpg') }}" alt="instagram"
                         class="insta-image img-fluid">
                 </a>
             </div>
@@ -705,7 +705,7 @@
         <div class="col-6 col-sm-4 col-md-2">
             <div class="insta-item">
                 <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-                    <img src="{{ asset('assets-landing/images/insta-item4.jpg') }}" alt="instagram"
+                    <img src="{{ asset('assets-landing/images/bouqet10.jpg') }}" alt="instagram"
                         class="insta-image img-fluid">
                 </a>
             </div>
@@ -713,7 +713,7 @@
         <div class="col-6 col-sm-4 col-md-2">
             <div class="insta-item">
                 <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-                    <img src="{{ asset('assets-landing/images/insta-item5.jpg') }}" alt="instagram"
+                    <img src="{{ asset('assets-landing/images/bouqet5.jpg') }}" alt="instagram"
                         class="insta-image img-fluid">
                 </a>
             </div>
@@ -721,7 +721,7 @@
         <div class="col-6 col-sm-4 col-md-2">
             <div class="insta-item">
                 <a href="https://www.instagram.com/templatesjungle/" target="_blank">
-                    <img src="{{ asset('assets-landing/images/insta-item6.jpg') }}" alt="instagram"
+                    <img src="{{ asset('assets-landing/images/bouqet6.jpg') }}" alt="instagram"
                         class="insta-image img-fluid">
                 </a>
             </div>
