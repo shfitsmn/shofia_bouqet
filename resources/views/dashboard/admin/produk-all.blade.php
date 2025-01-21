@@ -11,9 +11,9 @@
         <div>
             <a href="{{ route('produk.create') }}" class="btn btn-primary">Tambah Data</a>
         </div>
-        <div class="table-responsive">
+        <div class="table-responsive mt-3">
             <table class="table table-striped table-hover align-middle">
-                <thead class="table-dark">
+                <thead class="table-light">
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Gambar</th>
@@ -42,11 +42,11 @@
                             <span class="badge bg-primary">{{ ucwords($produk->kategori ?? 'Tidak Ada') }}</span>
                         </td>
                         <td>
-                            <p class="text-truncate" style="max-width: 150px;">{{ $produk->deskripsi ?? 'Tidak Ada
+                            <p style="max-width: 150px;">{{ $produk->deskripsi ?? 'Tidak Ada
                                 Deskripsi' }}</p>
                         </td>
                         <td>
-                            <span class="fw-bold text-success">Rp{{ number_format($produk->harga, 0, ',', '.') }}</span>
+                            <span class="fw-bold text-dark">Rp{{ number_format($produk->harga, 0, ',', '.') }}</span>
                         </td>
                         <td>
                             <div class="d-flex gap-2">
