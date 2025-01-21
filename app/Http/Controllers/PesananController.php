@@ -113,6 +113,16 @@ class PesananController extends Controller
         return redirect()->route('pesanan.index')->with('success', 'Pesanan telah diterima dan stok diperbarui.');
     }
 
+    public function batalkanPesanan($id)
+    {
+        $pesanan = Pesanan::findOrFail($id);
+
+        // Update status menjadi 'cancelled'
+        $pesanan->update(['status' => 'cancelled']);
+
+        return redirect()->route('dashboard.admin.pesanan-all')->with('success', 'Pesanan telah dibatalkan.');
+    }
+
     public function checkoutPesanan()
     {
         $produks = Produk::all(); // Mengambil semua produk
