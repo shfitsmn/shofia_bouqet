@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\PesananController;
 use App\Http\Controllers\DashboardController;
 
 /*
@@ -46,4 +47,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/produk/edit/{id}', [ProdukController::class, 'edit'])->name('produk.edit');
     Route::post('/produk/update/{id}', [ProdukController::class, 'update'])->name('produk.update');
     Route::get('/produk/delete/{id}', [ProdukController::class, 'destroy'])->name('produk.delete');
+
+    Route::get("/pesanan/all", [PesananController::class, 'index'])->name('pesanan.index');
+    Route::get("/pesanan/create", [PesananController::class, 'create'])->name('pesanan.create');
+    Route::post('/pesanan/store', [PesananController::class, 'store'])->name('pesanan.store');
+    Route::get('/pesanan/edit/{id}', [PesananController::class, 'edit'])->name('pesanan.edit');
+    Route::post('/pesanan/update/{id}', [PesananController::class, 'update'])->name('pesanan.update');
+    Route::get('/pesanan/delete/{id}', [PesananController::class, 'destroy'])->name('pesanan.delete');
+    Route::get('/pesanan/detail/{id}', [PesananController::class, 'show'])->name('pesanan.detail');
 });
