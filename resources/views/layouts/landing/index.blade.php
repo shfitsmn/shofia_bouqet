@@ -379,7 +379,7 @@
                     <div class="footer-menu footer-menu-001">
                         <div class="footer-intro mb-4">
                             <a href="index.html">
-                                <img src="{{ asset('assets-landing/images/main-logo.png') }}" alt="logo">
+                                Shofia Bouqet
                             </a>
                         </div>
                         <p>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in.
@@ -431,19 +431,13 @@
                         <h5 class="widget-title text-uppercase mb-4">Quick Links</h5>
                         <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
                             <li class="menu-item">
-                                <a href="index.html" class="item-anchor">Home</a>
+                                <a href="/" class="item-anchor">Home</a>
                             </li>
                             <li class="menu-item">
-                                <a href="index.html" class="item-anchor">About</a>
+                                <a href="/shop/bunga" class="item-anchor">Shop</a>
                             </li>
                             <li class="menu-item">
-                                <a href="blog.html" class="item-anchor">Services</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="styles.html" class="item-anchor">Single item</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="item-anchor">Contact</a>
+                                <a href="/contact" class="item-anchor">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -476,8 +470,8 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu footer-menu-004 border-animation-left">
                         <h5 class="widget-title text-uppercase mb-4">Contact Us</h5>
-                        <p>Do you have any questions or suggestions? <a href="mailto:contact@yourcompany.com"
-                                class="item-anchor">contact@yourcompany.com</a></p>
+                        <p>Do you have any questions or suggestions? <a href="mailto:shofiabouqet@gmail.com"
+                                class="item-anchor">shofiabouqet@gmail.com</a></p>
                         <p>Do you need support? Give us a call. <a href="tel:+43 720 11 52 78" class="item-anchor">+43
                                 720 11 52
                                 78</a>
