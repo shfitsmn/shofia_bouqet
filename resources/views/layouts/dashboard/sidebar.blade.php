@@ -24,6 +24,7 @@
                         <span class="hide-menu">Dashboard</span>
                     </a>
                 </li>
+                @if(auth()->user()->role === 'admin')
                 <li class="nav-small-cap">
                     <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
                     <span class="hide-menu">Admin</span>
@@ -52,6 +53,7 @@
                         <span class="hide-menu">Manajemen Pesanan</span>
                     </a>
                 </li>
+                @endif
                 {{-- <li class="sidebar-item">
                     <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
                         <span>
