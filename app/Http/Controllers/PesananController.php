@@ -16,7 +16,7 @@ class PesananController extends Controller
     public function index()
     {
         $pesanans = Pesanan::all();
-        return view('pesanan.index', compact('pesanans'));
+        return view('dashboard.admin.pesanan-all', compact('pesanans'));
     }
 
     /**
