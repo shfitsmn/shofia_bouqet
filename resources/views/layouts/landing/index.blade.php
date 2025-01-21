@@ -292,9 +292,8 @@
                                     </a>
                                 </li>
                                 <li class="d-sm-block d-lg-none">
-                                    <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Cart <span
-                                            class="cart-count">(0)</span>
+                                    <a href="/checkout" class="text-uppercase mx-3" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Checkout
                                     </a>
                                 </li>
                                 @else
@@ -378,7 +377,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu footer-menu-001">
                         <div class="footer-intro mb-4">
-                            <a href="index.html">
+                            <a href="/">
                                 Shofia Bouqet
                             </a>
                         </div>
