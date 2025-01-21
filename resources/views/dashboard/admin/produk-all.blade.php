@@ -18,6 +18,7 @@
                         <th scope="col">#</th>
                         <th scope="col">Gambar</th>
                         <th scope="col">Nama</th>
+                        <th scope="col">Stok</th>
                         <th scope="col">Kategori</th>
                         <th scope="col">Deskripsi</th>
                         <th scope="col">Harga</th>
@@ -37,6 +38,9 @@
                         </td>
                         <td>
                             <h6 class="fw-semibold mb-0">{{ ucwords($produk->nama) }}</h6>
+                        </td>
+                        <td>
+                            <h6 class="fw-semibold mb-0">{{ ucwords($produk->stok) }}</h6>
                         </td>
                         <td>
                             <span class="badge bg-primary">{{ ucwords($produk->kategori ?? 'Tidak Ada') }}</span>
