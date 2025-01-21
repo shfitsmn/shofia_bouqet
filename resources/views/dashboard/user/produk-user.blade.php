@@ -20,7 +20,7 @@
                     <p>{{ $produk->deskripsi }}</p>
                     <p class="text-success">Rp{{ number_format($produk->harga, 0, ',', '.') }}</p>
                     <div class="btn-left">
-                        <form action="{{ route('pesanan.store', $produk->id) }}" method="POST">
+                        <form action="{{ route('pesanan.simpan', $produk->id) }}" method="POST">
                             @csrf
                             <button type="submit" class="btn btn-primary fs-6 text-uppercase text-decoration-none">Pesan
                                 Sekarang</button>
