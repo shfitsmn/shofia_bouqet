@@ -29,8 +29,11 @@
                     <tr>
                         <th scope="row">{{ $loop->iteration }}</th>
                         <td>
-                            <img src="{{ asset('storage/'.$produk->gambar) }}" class="img-thumbnail"
-                                alt="{{ $produk->nama }}" style="max-width: 80px; height: auto;">
+                            <a href="{{ asset('storage/'.$produk->gambar) }}" target="_blank">
+                                <img src="{{ asset('storage/'.$produk->gambar) }}" class="img-thumbnail"
+                                    alt="{{ $produk->nama }}" style="max-width: 80px; height: auto;">
+                            </a>
+
                         </td>
                         <td>
                             <h6 class="fw-semibold mb-0">{{ ucwords($produk->nama) }}</h6>
