@@ -16,7 +16,7 @@ class DashboardController extends Controller
             $transaksiTerbaru = Pesanan::whereIn('status', ['completed', 'cancelled'])->orderBy('updated_at', 'desc')->take(5)->get(); // Transaksi terbaru (completed/cancelled)
             $pesananDiterima = Pesanan::where('status', 'completed')->count(); // Jumlah pesanan diterima
 
-            return view('dashboard', compact('totalPendapatan', 'transaksiTerbaru', 'pesananDiterima'));
+            return view('dashboard.index', compact('totalPendapatan', 'transaksiTerbaru', 'pesananDiterima'));
         } else {
             // Data untuk user
             $userId = auth()->id();

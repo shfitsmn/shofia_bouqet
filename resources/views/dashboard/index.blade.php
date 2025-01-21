@@ -41,7 +41,7 @@
                             @foreach($transaksiTerbaru as $transaksi)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td>{{ $transaksi->user->nama }}</td>
+                                <td>{{ $transaksi->pengguna->nama }}</td>
                                 <td>
                                     <span
                                         class="badge bg-{{ $transaksi->status == 'completed' ? 'success' : 'danger' }}">
