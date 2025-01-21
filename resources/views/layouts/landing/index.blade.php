@@ -320,8 +320,7 @@
                         </li>
                         <li class="d-none d-lg-block">
                             <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Cart <span
-                                    class="cart-count">(0)</span>
+                                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Checkout
                             </a>
                         </li>
                         @else
@@ -381,9 +380,8 @@
                                 Shofia Bouqet
                             </a>
                         </div>
-                        <p>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in.
-                            Nisi, purus
-                            vitae, ultrices nunc. Sit ac sit suscipit hendrerit.</p>
+                        <p>Temukan rangkaian buket bunga terbaru kami yang dirancang khusus untuk momen istimewa Anda.
+                            Setiap buket dibuat dengan penuh cinta dan perhatian untuk memberikan kesan terbaik.</p>
                         <div class="social-links">
                             <ul class="list-unstyled d-flex flex-wrap gap-3">
                                 <li>
