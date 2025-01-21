@@ -71,8 +71,7 @@
                 </g>
             </symbol>
             <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-cycle" viewBox="0 0 24 24">
-                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2">
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                     <path
                         d="M22 12c0 6-4.39 10-9.806 10C7.792 22 4.24 19.665 3 16m-1-4C2 6 6.39 2 11.806 2C16.209 2 19.76 4.335 21 8" />
                     <path d="m7 17l-4-1l-1 4M17 7l4 1l1-4" />
@@ -266,8 +265,8 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
                                 <li class="nav-item ">
-                                    <a class="nav-link  active" href="/" id="dropdownHome"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                                    <a class="nav-link  active" href="/" id="dropdownHome" data-bs-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="dropdownShop"
@@ -288,25 +287,25 @@
                                     <a class="nav-link" href="#">Contact</a>
                                 </li>
                                 @auth
-                                    <li class="d-sm-block d-lg-none">
-                                        <a href="/dashboard" class="text-uppercase mx-3">Dashboard
-                                        </a>
-                                    </li>
-                                    <li class="d-sm-block d-lg-none">
-                                        <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas"
-                                            data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Cart <span
-                                                class="cart-count">(0)</span>
-                                        </a>
-                                    </li>
+                                <li class="d-sm-block d-lg-none">
+                                    <a href="/dashboard" class="text-uppercase mx-3">Dashboard
+                                    </a>
+                                </li>
+                                <li class="d-sm-block d-lg-none">
+                                    <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Cart <span
+                                            class="cart-count">(0)</span>
+                                    </a>
+                                </li>
                                 @else
-                                    <li class="d-sm-block d-lg-none">
-                                        <a href="/register" class="text-uppercase mx-3">Register
-                                        </a>
-                                    </li>
-                                    <li class="d-sm-block d-lg-none">
-                                        <a href="/login" class="text-uppercase mx-3">Login
-                                        </a>
-                                    </li>
+                                <li class="d-sm-block d-lg-none">
+                                    <a href="/register" class="text-uppercase mx-3">Register
+                                    </a>
+                                </li>
+                                <li class="d-sm-block d-lg-none">
+                                    <a href="/login" class="text-uppercase mx-3">Login
+                                    </a>
+                                </li>
                                 @endauth
                             </ul>
                         </div>
@@ -316,25 +315,25 @@
                 <div class="col-3 col-lg-auto">
                     <ul class="list-unstyled d-flex m-0">
                         @auth
-                            <li class="d-none d-lg-block">
-                                <a href="/dashboard" class="text-uppercase mx-3">Dashboard
-                                </a>
-                            </li>
-                            <li class="d-none d-lg-block">
-                                <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Cart <span
-                                        class="cart-count">(0)</span>
-                                </a>
-                            </li>
+                        <li class="d-none d-lg-block">
+                            <a href="/dashboard" class="text-uppercase mx-3">Dashboard
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-block">
+                            <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">Cart <span
+                                    class="cart-count">(0)</span>
+                            </a>
+                        </li>
                         @else
-                            <li class="d-none d-lg-block">
-                                <a href="/register" class="text-uppercase mx-3">Register
-                                </a>
-                            </li>
-                            <li class="d-none d-lg-block">
-                                <a href="/login" class="text-uppercase mx-3">Login
-                                </a>
-                            </li>
+                        <li class="d-none d-lg-block">
+                            <a href="/register" class="text-uppercase mx-3">Register
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-block">
+                            <a href="/login" class="text-uppercase mx-3">Login
+                            </a>
+                        </li>
                         @endauth
 
 
@@ -346,21 +345,21 @@
                             </a>
                         </li>
                         <li class="d-lg-none">
-                            <a href="#" class="mx-2" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                            <a href="#" class="mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                                aria-controls="offcanvasCart">
                                 <svg width="24" height="24" viewBox="0 0 24 24">
                                     <use xlink:href="#cart"></use>
                                 </svg>
                             </a>
                         </li>
                         @auth
-                            <li class="search-box" class="mx-2">
-                                <a href="#search" class="search-button">
-                                    <svg width="24" height="24" viewBox="0 0 24 24">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                </a>
-                            </li>
+                        <li class="search-box" class="mx-2">
+                            <a href="#search" class="search-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </a>
+                        </li>
                         @endauth
 
                     </ul>
@@ -380,7 +379,7 @@
                     <div class="footer-menu footer-menu-001">
                         <div class="footer-intro mb-4">
                             <a href="index.html">
-                                <img src="images/main-logo.png" alt="logo">
+                                <img src="{{ asset('assets-landing/images/main-logo.png') }}" alt="logo">
                             </a>
                         </div>
                         <p>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in.
