@@ -2,7 +2,7 @@
     <!-- Sidebar scroll-->
     <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-            <a href="/dashboard" class="text-nowrap logo-img">
+            <a href="/dashboard" class="text-nowrap logo-img justify-center flex">
                 <img src="{{ asset('assets-dashboard/images/logos/logo.jpg') }}" width="100" class="rounded-circle"
                     alt="" />
             </a>
