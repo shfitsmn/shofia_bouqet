@@ -24,7 +24,7 @@
                     @foreach ($pesanans as $pesanan)
                     <tr>
                         <th scope="row">{{ $loop->iteration }}</th>
-                        <td>{{ $pesanan->user->nama }}</td>
+                        <td>{{ $pesanan->pengguna->nama }}</td>
                         <td>Rp{{ number_format($pesanan->total_harga, 0, ',', '.') }}</td>
                         <td>
                             <span
