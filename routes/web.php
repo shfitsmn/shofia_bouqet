@@ -58,6 +58,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::post('/pesan/{id}', [PesananController::class, 'storePesanan'])->name('pesanan.simpan'); // Memproses pesanan
     Route::post('/pesanan/{id}/terima', [PesananController::class, 'terimaPesanan'])->name('pesanan.terima'); // Menerima pesanan
+    Route::post('/pesanan/{id}/batalkan', [PesananController::class, 'batalkanPesanan'])->name('pesanan.batalkan'); // Menerima pesanan
 
     Route::get('/checkout', [PesananController::class, 'checkoutPesanan'])->name('checkoutPesanan');
 });
