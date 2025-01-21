@@ -15,7 +15,8 @@ class PesananController extends Controller
      */
     public function index()
     {
-        //
+        $pesanans = Pesanan::with('user', 'produk', 'detailPesanan')->get();
+        return view('pesanan.index', compact('pesanans'));
     }
 
     /**
