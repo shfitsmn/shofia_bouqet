@@ -222,7 +222,7 @@
                     <div class="product-item image-zoom-effect link-effect">
                         <div class="image-holder position-relative">
                             <a href="#bouquet-1">
-                                <img src="{{ asset('assets-landing/images/bouquet1.jpg') }}" alt="Elegant Rose Bouquet"
+                                <img src="{{ asset('assets-landing/images/bouqet1.jpg') }}" alt="Elegant Rose Bouquet"
                                     class="product-image img-fluid">
                             </a>
                             <a href="#wishlist" class="btn-icon btn-wishlist">
@@ -245,7 +245,7 @@
                     <div class="product-item image-zoom-effect link-effect">
                         <div class="image-holder position-relative">
                             <a href="#bouquet-2">
-                                <img src="{{ asset('assets-landing/images/bouquet2.jpg') }}"
+                                <img src="{{ asset('assets-landing/images/bouqet2.jpg') }}"
                                     alt="Bright Sunflower Bouquet" class="product-image img-fluid">
                             </a>
                             <a href="#wishlist" class="btn-icon btn-wishlist">
@@ -268,7 +268,7 @@
                     <div class="product-item image-zoom-effect link-effect">
                         <div class="image-holder position-relative">
                             <a href="#bouquet-3">
-                                <img src="{{ asset('assets-landing/images/bouquet3.jpg') }}" alt="Pastel Peony Bouquet"
+                                <img src="{{ asset('assets-landing/images/bouqet3.jpg') }}" alt="Pastel Peony Bouquet"
                                     class="product-image img-fluid">
                             </a>
                             <a href="#wishlist" class="btn-icon btn-wishlist">
@@ -291,7 +291,7 @@
                     <div class="product-item image-zoom-effect link-effect">
                         <div class="image-holder position-relative">
                             <a href="#bouquet-4">
-                                <img src="{{ asset('assets-landing/images/bouquet4.jpg') }}" alt="Blush Pink Bouquet"
+                                <img src="{{ asset('assets-landing/images/bouqet4.jpg') }}" alt="Blush Pink Bouquet"
                                     class="product-image img-fluid">
                             </a>
                             <a href="#wishlist" class="btn-icon btn-wishlist">
@@ -334,7 +334,7 @@
                 <!-- Gambar Koleksi -->
                 <div class="col-md-6 column-container">
                     <div class="image-holder">
-                        <img src="{{ asset('assets-landing/images/bouquet-collection.jpg') }}" alt="Bouquet Collection"
+                        <img src="{{ asset('assets-landing/images/bouqet-collection.jpg') }}" alt="Bouquet Collection"
                             class="product-image img-fluid">
                     </div>
                 </div>
@@ -368,7 +368,7 @@
                     <div class="product-item image-zoom-effect link-effect">
                         <div class="image-holder">
                             <a href="#bestseller-1">
-                                <img src="{{ asset('assets-landing/images/bouquet-bestseller1.jpg') }}"
+                                <img src="{{ asset('assets-landing/images/bouqet-bestseller1.jpg') }}"
                                     alt="Romantic Rose Bouquet" class="product-image img-fluid">
                             </a>
                             <a href="#wishlist" class="btn-icon btn-wishlist">
@@ -391,7 +391,7 @@
                     <div class="product-item image-zoom-effect link-effect">
                         <div class="image-holder">
                             <a href="#bestseller-2">
-                                <img src="{{ asset('assets-landing/images/bouquet-bestseller2.jpg') }}"
+                                <img src="{{ asset('assets-landing/images/bouqet-bestseller2.jpg') }}"
                                     alt="Bright Sunflower Bouquet" class="product-image img-fluid">
                             </a>
                             <a href="#wishlist" class="btn-icon btn-wishlist">
@@ -414,7 +414,7 @@
                     <div class="product-item image-zoom-effect link-effect">
                         <div class="image-holder">
                             <a href="#bestseller-3">
-                                <img src="{{ asset('assets-landing/images/bouquet-bestseller3.jpg') }}"
+                                <img src="{{ asset('assets-landing/images/bouqet-bestseller3.jpg') }}"
                                     alt="Pastel Peony Bouquet" class="product-image img-fluid">
                             </a>
                             <a href="#wishlist" class="btn-icon btn-wishlist">
@@ -437,7 +437,7 @@
                     <div class="product-item image-zoom-effect link-effect">
                         <div class="image-holder">
                             <a href="#bestseller-4">
-                                <img src="{{ asset('assets-landing/images/bouquet-bestseller4.jpg') }}"
+                                <img src="{{ asset('assets-landing/images/bouqet-bestseller4.jpg') }}"
                                     alt="Blush Pink Bouquet" class="product-image img-fluid">
                             </a>
                             <a href="#wishlist" class="btn-icon btn-wishlist">
@@ -536,8 +536,8 @@
                     <div class="product-item image-zoom-effect link-effect">
                         <div class="image-holder">
                             <a href="#bouquet-1">
-                                <img src="{{ asset('assets-landing/images/bouquet-related1.jpg') }}"
-                                    alt="Romantic Rose Bouquet" class="product-image img-fluid">
+                                <img src="{{ asset('assets-landing/images/bouqet1.jpg') }}" alt="Romantic Rose Bouquet"
+                                    class="product-image img-fluid">
                             </a>
                             <a href="#wishlist" class="btn-icon btn-wishlist">
                                 <svg width="24" height="24" viewBox="0 0 24 24">
@@ -559,7 +559,7 @@
                     <div class="product-item image-zoom-effect link-effect">
                         <div class="image-holder">
                             <a href="#bouquet-2">
-                                <img src="{{ asset('assets-landing/images/bouquet-related2.jpg') }}"
+                                <img src="{{ asset('assets-landing/images/bouqet2.jpg') }}"
                                     alt="Bright Sunflower Bouquet" class="product-image img-fluid">
                             </a>
                             <a href="#wishlist" class="btn-icon btn-wishlist">
@@ -582,8 +582,8 @@
                     <div class="product-item image-zoom-effect link-effect">
                         <div class="image-holder">
                             <a href="#bouquet-3">
-                                <img src="{{ asset('assets-landing/images/bouquet-related3.jpg') }}"
-                                    alt="Pastel Peony Bouquet" class="product-image img-fluid">
+                                <img src="{{ asset('assets-landing/images/bouqet3.jpg') }}" alt="Pastel Peony Bouquet"
+                                    class="product-image img-fluid">
                             </a>
                             <a href="#wishlist" class="btn-icon btn-wishlist">
                                 <svg width="24" height="24" viewBox="0 0 24 24">
@@ -605,8 +605,8 @@
                     <div class="product-item image-zoom-effect link-effect">
                         <div class="image-holder">
                             <a href="#bouquet-4">
-                                <img src="{{ asset('assets-landing/images/bouquet-related4.jpg') }}"
-                                    alt="Blush Pink Bouquet" class="product-image img-fluid">
+                                <img src="{{ asset('assets-landing/images/bouqet4.jpg') }}" alt="Blush Pink Bouquet"
+                                    class="product-image img-fluid">
                             </a>
                             <a href="#wishlist" class="btn-icon btn-wishlist">
                                 <svg width="24" height="24" viewBox="0 0 24 24">
