@@ -120,7 +120,7 @@ class PesananController extends Controller
         // Update status menjadi 'cancelled'
         $pesanan->update(['status' => 'cancelled']);
 
-        return redirect()->route('dashboard.admin.pesanan-all')->with('success', 'Pesanan telah dibatalkan.');
+        return redirect()->route('pesanan.index')->with('success', 'Pesanan telah dibatalkan.');
     }
 
     public function checkoutPesanan()
